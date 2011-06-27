@@ -3,7 +3,7 @@
 
 # What is CertGen
 
-CertGen is an openssl based script used to generate client certificates, which can then be installed in browsers.
+CertGen is an openssl based script used to generate client certificates, which can then be installed in browsers. It uses HTML5's keygen component to securely create a certificate, keeping the private key in the user's control.
 
 # Changes
 - allows adding multiple SANs in the certificate
