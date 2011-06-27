@@ -9,6 +9,8 @@ Changes:
 - allows adding emails in the certificate
 
 Author: Andrei Sambra - andrei@fcns.eu / 2011-06-27
+
+Version: 0.1-alpha
   
 Copyright (C) 2011 by Andrei Sambra - FCNS
 
