@@ -1,0 +1,5 @@
+CertGen is an openssl based script used to generate client certificates, which can then be installed in browsers.
+
+There is currently one issue with this implementation, the fact that it's based on openssl. It has to call openssl every time it creates a certificate. This also means that it requires to have openssl configured to allow the application to write into the SAN (subjectAltenativeName) field of the certificate. I'm adding my openssl.cnf file so you will have an example.
+
+In case you might need to create a self-signed CA as well, there's a quick guide you could follow at http://sandbox.rulemaker.net/ngps/m2/howto.ca.html. 
