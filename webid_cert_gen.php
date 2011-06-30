@@ -185,7 +185,7 @@ if ($_GET['doit'] == 1) {
 	$pubkey                 = $_GET['pubkey'];
 	
 	// Create a x509 SSL certificate
-	if ($x509 = create_identity_x509($log, $countryName, $stateOrProvinceName, $localityName, $organizationName, $organizationalUnitName, $commonName, $emailAddress, $foafLocation, $pubkey)) {
+	if ($x509 = create_identity_x509($countryName, $stateOrProvinceName, $localityName, $organizationName, $organizationalUnitName, $commonName, $emailAddress, $foafLocation, $pubkey)) {
 		// Send the X.509 SSL certificate to the script caller (user) as a file transfer
 		download_identity_x509($log, $x509, $foafLocation);
 	}
